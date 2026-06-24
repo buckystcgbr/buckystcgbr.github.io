@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BUCKYSCOLLECTIONS</title>
+  <meta name="description" content="Alertas de ofertas Pokémon TCG no WhatsApp. Produtos com menor preço do mercado." />
+  <meta property="og:title" content="BUCKYSCOLLECTIONS" />
+  <meta property="og:description" content="Alertas de ofertas Pokémon TCG no WhatsApp." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2.5rem 1rem 3rem;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e3b53d, #c8380a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      box-shadow: 0 0 0 3px #1a1a1a, 0 0 0 5px #e3b53d44;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+
+    .bio {
+      font-size: 14px;
+      color: #aaa;
+      text-align: center;
+      line-height: 1.6;
+      max-width: 300px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e3b53d22;
+      color: #e3b53d;
+      border: 1px solid #e3b53d44;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 0.25rem;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 15px 18px;
+      border-radius: 14px;
+      border: 1px solid #2a2a2a;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+    }
+
+    .btn:hover { background: #222; }
+    .btn:active { transform: scale(0.98); }
+
+    .btn-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .btn-text { display: flex; flex-direction: column; gap: 2px; }
+    .btn-sub { font-size: 12px; font-weight: 400; color: #777; }
+    .btn-arrow { margin-left: auto; color: #444; font-size: 18px; }
+
+    .icon-wa  { background: #0d2e1a; }
+    .icon-wa2 { background: #0d2218; }
+    .icon-ml  { background: #2a200a; }
+    .icon-amz { background: #1e1508; }
+    .icon-ig  { background: #2a0d1e; }
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: #222;
+      margin: 0.25rem 0;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #444;
+      margin-top: 0.5rem;
+    }
+
+    .highlight { border-color: #e3b53d44; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="avatar">🃏</div>
+    <div class="name">BUCKYSCOLLECTIONS</div>
+    <span class="badge">Pokémon TCG</span>
+    <div class="bio">Alertas de ofertas e descontos em produtos Pokémon TCG direto no WhatsApp.</div>
+
+    <div class="links">
+
+      <a class="btn highlight" href="https://www.whatsapp.com/channel/0029VbDJJvyKLaHh0dlWKd1t" target="_blank" rel="noopener">
+        <div class="btn-icon icon-wa">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.96 7.96 0 01-4.274-1.243l-.306-.183-3.173.896.847-3.096-.2-.317A7.96 7.96 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+        </div>
+        <div class="btn-text">
+          <span>Canal de Descontos</span>
+          <span class="btn-sub">Alertas de preço em tempo real</span>
+        </div>
+        <span class="btn-arrow">›</span>
+      </a>
+
+      <a class="btn" href="https://chat.whatsapp.com/CLyp9jKRt6iDLvrV5jTFfO" target="_blank" rel="noopener">
+        <div class="btn-icon icon-wa2">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.96 7.96 0 01-4.274-1.243l-.306-.183-3.173.896.847-3.096-.2-.317A7.96 7.96 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+        </div>
+        <div class="btn-text">
+          <span>Grupo WhatsApp</span>
+          <span class="btn-sub">Comunidade de colecionadores</span>
+        </div>
+        <span class="btn-arrow">›</span>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="btn" href="https://www.mercadolivre.com.br/social/buckyscollections/lists/ff19742d-604e-40c6-a18f-427066ec5691?matt_tool=58466649&matt_word=buckyscollections" target="_blank" rel="noopener">
+        <div class="btn-icon icon-ml">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <text x="2" y="18" font-size="16" fill="#e3b53d">ML</text>
+          </svg>
+        </div>
+        <div class="btn-text">
+          <span>Produtos Mercado Livre</span>
+          <span class="btn-sub">Lista de recomendações com desconto</span>
+        </div>
+        <span class="btn-arrow">›</span>
+      </a>
+
+      <a class="btn" href="https://www.amazon.com.br/s?k=pokemon+tcg&tag=buckyscollect-20&language=pt_BR" target="_blank" rel="noopener">
+        <div class="btn-icon icon-amz">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF9900"><path d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.439-2.186 1.439-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.699-3.182v.684zm3.186 7.705c-.209.189-.512.201-.745.074-1.047-.869-1.235-1.274-1.814-2.106-1.733 1.766-2.961 2.294-5.209 2.294-2.66 0-4.731-1.642-4.731-4.925 0-2.565 1.391-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.098v-.41c0-.753.06-1.642-.384-2.295-.385-.581-1.124-.82-1.775-.82-1.205 0-2.277.618-2.54 1.897-.054.285-.261.567-.549.582l-3.061-.33c-.259-.058-.548-.266-.472-.66C5.7 3.252 8.856 2.5 11.66 2.5c1.428 0 3.296.38 4.421 1.461 1.43 1.338 1.294 3.121 1.294 5.061v4.583c0 1.378.572 1.984 1.111 2.728.188.264.229.58-.009.776-.602.506-1.671 1.446-2.261 1.971l-.072-.285zM20.421 19.098c-2.061 1.349-5.046 2.046-7.614 2.046-3.606 0-6.851-1.333-9.306-3.553-.193-.175-.021-.414.211-.278 2.649 1.542 5.926 2.472 9.313 2.472 2.283 0 4.793-.474 7.107-1.454.349-.149.643.228.289.767z"/></svg>
+        </div>
+        <div class="btn-text">
+          <span>Produtos Amazon</span>
+          <span class="btn-sub">Pokémon TCG com melhor preço</span>
+        </div>
+        <span class="btn-arrow">›</span>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="btn" href="https://www.instagram.com/buckys.tcg" target="_blank" rel="noopener">
+        <div class="btn-icon icon-ig">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E1306C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="#E1306C" stroke="none"/>
+          </svg>
+        </div>
+        <div class="btn-text">
+          <span>Instagram</span>
+          <span class="btn-sub">@buckys.tcg</span>
+        </div>
+        <span class="btn-arrow">›</span>
+      </a>
+
+    </div>
+
+    <div class="footer">buckyscollections © 2026</div>
+  </div>
+</body>
+</html>
